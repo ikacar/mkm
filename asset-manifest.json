@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/mkm/static/css/main.8cc5c24f.css",
+    "main.js": "/mkm/static/js/main.a40ec39a.js",
+    "static/js/592.db7aca85.chunk.js": "/mkm/static/js/592.db7aca85.chunk.js",
+    "static/media/beton.jpg": "/mkm/static/media/beton.2096ff4fb1af2c109bb5.jpg",
+    "static/media/project3.jpeg": "/mkm/static/media/project3.2e0af25f5a50d7e058cb.jpeg",
+    "static/media/project1.jpeg": "/mkm/static/media/project1.28eb555a144f5f3559a7.jpeg",
+    "static/media/project2.jpeg": "/mkm/static/media/project2.b3bdcd4fbb7d891cd70c.jpeg",
+    "static/media/radnici-power.jpg": "/mkm/static/media/radnici-power.2796f11208503dd5e2c6.jpg",
+    "static/media/blueprint.png": "/mkm/static/media/blueprint.52d5f66d1c8123ac89e9.png",
+    "static/media/onama.jpg": "/mkm/static/media/onama.9346298512144330f448.jpg",
+    "static/media/constructionSite1.jpg": "/mkm/static/media/constructionSite1.450b3b884922dba6385a.jpg",
+    "static/media/bager3.jpg": "/mkm/static/media/bager3.81e30aded960d9eb50fe.jpg",
+    "static/media/logo1.jpg": "/mkm/static/media/logo1.ad5ae7e52d9e84a4d029.jpg",
+    "static/media/vodje_gradilista.jpg": "/mkm/static/media/vodje_gradilista.93ea26d74bc8ec902992.jpg",
+    "static/media/CraneBuilding.jpg": "/mkm/static/media/CraneBuilding.6ce2e00bd807027223bf.jpg",
+    "static/media/kran.jpeg": "/mkm/static/media/kran.e3c8c614ccf2d81a11f9.jpeg",
+    "static/media/working2.jpg": "/mkm/static/media/working2.2385dff5b349e0fd25e9.jpg",
+    "static/media/clouds.jpeg": "/mkm/static/media/clouds.11da69d4e6ef4090a275.jpeg",
+    "index.html": "/mkm/index.html",
+    "main.8cc5c24f.css.map": "/mkm/static/css/main.8cc5c24f.css.map",
+    "main.a40ec39a.js.map": "/mkm/static/js/main.a40ec39a.js.map",
+    "592.db7aca85.chunk.js.map": "/mkm/static/js/592.db7aca85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cc5c24f.css",
+    "static/js/main.a40ec39a.js"
+  ]
+}

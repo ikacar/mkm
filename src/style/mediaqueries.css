@@ -347,8 +347,8 @@
         font-size: 1rem;
     }
 
-    .right-section img{
-        display: none;
+    .right-section-image{
+        /* display: none; */
     }
 
     .landing-left-section{
@@ -372,7 +372,9 @@
         display: none;
     }
 
-
+    .about-us{
+        padding-bottom: 15vh;
+    }
     .about-us h2{
         font-size: 2rem;
     }
@@ -399,6 +401,116 @@
     .left-section-heading{
         padding-bottom: 8vh;
 
+    }
+
+    .services-heading{
+        padding-bottom: 4vh;
+    }
+
+    .landing-right-section{
+        padding-top: 0vh;
+    }
+
+    .landing-right-section-heading{
+        padding-bottom: 8vh;
+    }
+
+    .landing-right-section h1{
+        font-size: 16vw;
+        line-height: 8vh;
+    }
+
+    .landing-right-section h2{
+        font-size: 9vw;
+    }
+
+    .landing-right-section p{
+        font-size: 1rem;
+    }
+
+    .landing-right-section-image{
+        display: none;
+    }
+
+    .services-heading{
+        padding-bottom: 4vh;
+    }
+
+    .services h2{
+        font-size: 9vw;
+        font-weight: 900;
+        margin-bottom: 2vh;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+
+    .services p{
+        font-size: 1rem;
+        text-align: left;
+        padding-bottom: 4vh;
+        font-weight: 400;
+        padding-bottom: 0vh;
+    }
+
+    .services-list-container{
+
+        display: block;
+        align-items: start;
+        justify-content: start;
+        padding-bottom: 10vh;
+        /* padding-left: -20vw; */
+
+    }
+
+    .services-list h2{
+        font-size: 2rem;
+
+    }
+
+    .services-list li{
+        font-size: 1rem;
+    }
+
+    .services-list-container{
+        padding-bottom: 0vh;
+    }
+
+    .footer-col{
+        padding: 0;
+    }
+
+    .footer{
+        padding-top: 0vh;
+    }
+
+    .projects-landing{
+        min-height: 60vh;
+    }
+
+    .project-container {
+        height: 30vh;
+        margin-bottom: 10vh;
+    }
+
+    .project-info{
+        padding: 2vh 2vw;
+        height: 26vh;
+        width: 30vw;
+    }
+    
+    .project-heading{
+        padding-bottom: 4vh;
+        font-weight: 900 ;
+        font-size: 2rem;
+        background-color: none;
+    }
+
+    .project-info h1{
+        font-size: 0.7rem;
+    }
+
+    .project-info p{
+        font-size: 1rem;
     }
 
 }

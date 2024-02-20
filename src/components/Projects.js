@@ -31,7 +31,7 @@ const Projects = () => {
                         <h1>Izvođenje zidarskih i armirano betonskih radova</h1>
                         <p>Povrsina 500 m2</p>
                     </div>
-                    <div className="project-heading">Mozzart Bet Smederevo</div>                
+                    <div className="project-heading">Mozzart Bet</div>                
 
                 </div>
                 <div className="project-container project-left" style={{  backgroundImage: `url(${project2})`}}>
@@ -46,7 +46,7 @@ const Projects = () => {
                         <h1>Izvođenje zidarskih i armirano betonskih radova</h1>
                         <p>Povrsina 500 m2</p>
                     </div>
-                    <div className="project-heading">AERODROM „KONSTANTIN VELIKI“-NIŠ</div>                
+                    <div className="project-heading">Aerodrom - NIŠ</div>                
 
                 </div>
             </section>

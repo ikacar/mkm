@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <div className='navigation'>
       <nav id="desktop-nav">
-        <Link to="/" className='logo'>MKM Global</Link>
+        <Link to="/" className='logo'>MKM</Link>
         <div className='nav-links'>
           {/* <Link className='nav-link' to="/">Početna</Link> */}
           <Link className='nav-link' to="/o-nama">O nama</Link>

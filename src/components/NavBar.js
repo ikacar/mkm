@@ -14,7 +14,7 @@ const NavBar = () => {
       <nav id="desktop-nav">
         <Link to="/" className='logo'>MKM Global</Link>
         <div className='nav-links'>
-          <Link className='nav-link' to="/">Početna</Link>
+          {/* <Link className='nav-link' to="/">Početna</Link> */}
           <Link className='nav-link' to="/o-nama">O nama</Link>
           <Link className='nav-link' to="/usluge">Usluge</Link>
           <Link className='nav-link' to="/projekti">Projekti</Link>

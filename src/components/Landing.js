@@ -4,19 +4,23 @@ import React from 'react';
 import '../style/landing.css';
 
 import bager3 from '../img/bager3.jpg';
-import constructionSite from '../img/constructionSite1.jpg';
-import craneBuilding from '../img/CraneBuilding.jpg';
+import constructionSite from '../img/constructionSite.jpg';
+import craneBuilding from '../img/craneBuilding.jpg';
 import working2 from '../img/working2.jpg';
 import vodje_gradilista from '../img/vodje_gradilista.jpg';
 import radnici from '../img/radnici-power.jpg';
 import logo from '../img/logo1.jpg';
-import kran from '../img/kran.jpeg';
+import kran from '../img/kran.jpg';
 import blueprint from '../img/blueprint.png';
 import Baner from './Baner';
-
+import { useLayoutEffect } from 'react';
 
 const Landing = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
+    
     return (
         <div>
             <section className='landing'>
@@ -32,7 +36,10 @@ const Landing = () => {
                     <img src={kran} alt="kran" />
                 </div>
             </section>
-            <Baner image={blueprint} text1="zajedno gradimo" text2="vasu buducnost"/>
+            <div className="first-baner">
+            <Baner  image={blueprint} text1="zajedno gradimo" text2="vasu buducnost"/>
+            </div>
+            
             <section className='right-section'>
                 <div className='right-section-heading'>
                     <h2>Naša misija</h2>

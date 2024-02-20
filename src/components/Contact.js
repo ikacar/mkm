@@ -1,8 +1,12 @@
 import React from "react";
 import beton from "../img/beton.jpg";
 import '../style/contact.css';
+import { useLayoutEffect } from "react";
 
 const Contact = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
     return (
         <div>
             <main data-scroll-container="" horizontal="">

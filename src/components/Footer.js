@@ -13,14 +13,14 @@ const Footer = () => {
   	 	<div class="row">
   	 	
   	 		<div class="footer-col">
-  	 			<h4>Informacije</h4>
+			   <h2>Informacije</h2>
   	 			<ul>
                    <li>PIB: 108977989 </li>
   	 				<li>MB: 21092142 </li>
                 </ul>
   	 		</div>
   	 		<div class="footer-col">
-  	 			<h4>Kontakt</h4>
+			   <h2>Kontakt</h2>
   	 			<ul>
                     <li>info@mkmglobal.rs</li>
                     <li>011/ 123-456</li>
@@ -28,7 +28,7 @@ const Footer = () => {
   	 			</ul>
   	 		</div>
                <div class="footer-col">
-  	 			<h4>Adresa</h4>
+			   	<h2>Adresa</h2>
   	 			<ul>
                     <li>MKM Global Building d.o.o Beograd</li>
   	 				<li>Bulevar Oslobođenja 94/31, Beograd</li>

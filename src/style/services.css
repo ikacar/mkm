@@ -62,3 +62,54 @@
     font-size: 1.25rem;
 
 }
+
+    /* napraviti animaciju da se cela .about-us-heading sekcija pojavi sa 1 sekundom zakasnjena od trenutka kad se fokusira na nju */
+    .services {
+        opacity: 0; /* Postavljamo početnu transparentnost na 0 */
+        transition: opacity 1s ease; /* Dodajemo prelazak za promenu transparentnosti */
+        transition-delay: 0.5s;
+
+      }
+      
+      .services.visible {
+        opacity: 1; /* Postavljamo transparentnost na 1 kada je vidljivo */
+      }
+
+
+    @keyframes slideInLeft {
+        from {
+          transform: translateX(-20%);
+          opacity: 0.5;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+      .landing-right-section-heading h1{
+        animation: slideInRight 1s ease forwards;
+      }
+      .landing-right-section-heading h2{
+        animation: slideInRight 1.5s ease forwards;
+      }
+    
+      .landing-right-section-heading p {
+        animation: slideInRight 2s ease forwards;
+      }
+
+@keyframes slideInRight {
+    from {
+      transform: translateX(20%);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+} 
+
+.landing-right-section-image img {
+    animation: slideInLeft 1s ease forwards;
+}
+

@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import './style/mediaqueries.css';
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';

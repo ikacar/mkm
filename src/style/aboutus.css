@@ -27,3 +27,53 @@
     line-height: 1.5;
     /* margin: 0 auto; */
 }
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-20%);
+      opacity: 0.5;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .landing-left-section-heading h1{
+    animation: slideInLeft 1s ease forwards;
+  }
+  .landing-left-section-heading h2{
+    animation: slideInLeft 1.5s ease forwards;
+  }
+
+  .landing-left-section-heading p {
+    animation: slideInLeft 2s ease forwards;
+  }
+
+  /* napravi slideInRight i stavi je na image */
+
+    @keyframes slideInRight {
+        from {
+        transform: translateX(20%);
+        opacity: 0.5;
+        }
+        to {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+
+    .landing-left-section-image img {
+        animation: slideInRight 1s ease forwards;
+    }
+
+    /* napraviti animaciju da se cela .about-us-heading sekcija pojavi sa 1 sekundom zakasnjena od trenutka kad se fokusira na nju */
+    .about-us-heading {
+        opacity: 0; /* Postavljamo početnu transparentnost na 0 */
+        transition: opacity 1s ease; /* Dodajemo prelazak za promenu transparentnosti */
+        transition-delay: 0.5s;
+      }
+      
+      .about-us-heading.visible {
+        opacity: 1; /* Postavljamo transparentnost na 1 kada je vidljivo */
+      }

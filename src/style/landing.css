@@ -4,19 +4,20 @@ section{
 
 .landing{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     
 }
 .heading{
-    padding-left: 4vw;
     /* position: absolute; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    padding-right: 3vh;
 }
 .heading h1{
     font-size: 9vw;
+    /* make it bold   */
+    
     letter-spacing: 5px;
     background-image: url(../img/clouds.jpeg);
     background-size: cover;
@@ -31,8 +32,9 @@ section{
 }
 
 .heading p{
+    margin-top: 6vh;
     font-size: 1.5rem;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px */
     text-transform: uppercase;
     line-height: 5vh;
     
@@ -41,16 +43,69 @@ section{
 .landing-image{
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;
+    
+
 }
 .landing-image img{
-    filter: blur(2px);
-    width: 35vw;
-    height: 80vh;
-}
+    /* filter: blur(2px); */
+    width: 600px;
+    height: 800px;
 
+}
 
 svg{
     /* set color  */
     fill: #142d4c
+}
+
+.first-baner{
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+}
+
+
+
+/* napravi animaciju da se landing heading pojavi sa 1 sekundom zakasnjena od trenutka ucitavanja stranice */
+
+
+.landing .heading h1{
+    opacity: 0; /* Postavljamo početnu transparentnost na 0 */
+    animation: fadeIn 2s ease forwards; /* Dodajemo animaciju */
+
+  }
+
+.landing .heading p {
+    opacity: 0;
+    animation: sladeInLeft 2s ease forwards; /* Dodajemo animaciju */
+    animation-delay: 0.5s;
+
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+@keyframes sladeInLeft {
+    from {
+    transform: translateX(-5%);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    }
+
+/* Napraviti da se slika zumira pri ucitavanju stranice */
+
+
+.landing-image img {
+  animation: slideInRight 1s ease forwards;
 }

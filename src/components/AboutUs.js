@@ -1,9 +1,32 @@
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import onama from '../img/onama.jpg';
 import '../style/aboutus.css';
-import craneBuilding from '../img/CraneBuilding.jpg';
+import craneBuilding from '../img/craneBuilding.jpg';
+import { useLayoutEffect } from 'react';
 
 const AboutUs = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const aboutUsRef = useRef(null);
+
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (aboutUsRef.current) {
+                const topPosition = aboutUsRef.current.getBoundingClientRect().top;
+                const isVisible = topPosition < window.innerHeight;
+                setIsVisible(isVisible);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
         <div>
             <section className='landing-left-section'>
@@ -17,10 +40,9 @@ const AboutUs = () => {
                         MKM Global Building d.o.o osnovana je 2015. god. sa ciljem da bude građevinsko preduzeće koje pruža efikasne, pristupačne, održive usluge najvišeg kvaliteta svojim klijentima.
                     </p>
                 </div>
-            
             </section>
-            <section className='about-us'>
-                <div className='about-us-heading'>
+            <section ref={aboutUsRef} className='about-us'>
+                <div className={`about-us-heading ${isVisible ? 'visible' : ''}`}>
                     <h2>
                         KVALITET, TRUD I KREATIVNOST ČINE NAS POSEBNIM
                     </h2>
@@ -35,11 +57,9 @@ const AboutUs = () => {
 
                     </p>
                 </div>
-                
             </section>
-            
         </div>
-    )
+    );
 }
 
 export default AboutUs;

@@ -1,4 +1,16 @@
+.projects{
+    padding-right: 0;
+    padding-left: 0;
+}
+.projects-landing{
+    max-height: 80vh;
+    padding-right: 0;
+    padding-left: 0;
+}
 
+.first-section{
+    margin-top: 0;
+}
 
 .project-container{
     /* background-image: url(../img/project1.jpeg); */
@@ -7,7 +19,6 @@
     background-position: center;
     height: 50vh;
     margin-bottom: 15vh;
-
 
 }
 

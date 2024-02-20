@@ -15,12 +15,13 @@ nav, .nav-links{
 }
 
 nav {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 10vh;
 }
 
 .nav-links {
+    padding-right: 6vw;
     gap: 2rem;
     font-size: 1.25rem;    
 }
@@ -33,20 +34,23 @@ nav {
 }
 
 .nav-link:hover {
+    color: #899fb4;
     /* todo postaviti boju */
     /* color: #f1356d; */
 }
 
 .logo {
+    padding-left: 6vw;
     text-decoration: none;
     font-size: 2rem;
     color: #5585b5;
 
-
 }
 
 .logo:hover {
-    cursor: default;
+    /* cursor: default; */
+    color: #899fb4;
+
 }
 
 /* HAMBURGER MENU */

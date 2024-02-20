@@ -23,6 +23,7 @@ const Projects = () => {
                 <Baner image={project3} text1="NASI Projekti" background={true} className="first-section"/>
                 <PathBottom />
             </section>
+            
             <section className='projects'>
                 <div className="project-container project-right" style={{  backgroundImage: `url(${project1})`}}>
 

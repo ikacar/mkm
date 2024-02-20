@@ -276,6 +276,129 @@
         padding-bottom: 5vh;
     }
 
+    .project-container {
+        /* background-image: url(../img/project1.jpeg); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40vh;
+        margin-bottom: 15vh;
+    } 
 
+    .project-info{
+        padding: 5vh 5vw;
+        /* fit to parent */
+        height: 30vh;
+        width: 15vw;
+    }
+
+    .project-heading{
+        padding-bottom: 6vh;
+        font-weight: 900 ;
+        font-size: 3rem;
+        background-color: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .landing{
+        min-height: 20vh;
+        padding-left: 4vw;
+    }
+
+
+    .landing h1{
+        line-height: 8vh;
+
+    }
+
+
+    .baner{
+        min-height: 40vh;
+
+    }
+
+    .baner h1{
+        font-size: 8vw;
+        line-height: 8vh;
+    }
+
+    .right-section{
+        padding-left: 0vw;
+        min-height: 60vh;
+        padding-bottom:5vh;
+    }
+    .right-section h2{
+        font-size: 9vw;
+    }
+
+    .right-section p{
+        font-size: 1rem;
+    }
+
+    .left-section h2{
+        font-size: 9vw;
+    }
+
+    .right-section p{
+        font-size: 1rem;
+    }
+
+    .right-section img{
+        display: none;
+    }
+
+    .landing-left-section{
+        padding-top: 0vh;
+    }
+
+    .landing-left-section h1{
+        font-size: 16vw;
+        line-height: 8vh;
+    }
+
+    .landing-left-section h2{
+        font-size: 9vw;
+    }
+
+    .landing-left-section p{
+        font-size: 1rem;
+    }
+
+    .landing-left-section-image{
+        display: none;
+    }
+
+
+    .about-us h2{
+        font-size: 2rem;
+    }
+
+    .about-us p{
+        font-size: 1rem;
+    }
+
+
+    .left-section{
+        padding-top: 15vh;
+        /* padding-left: 0vw; */
+        min-height: 60vh;
+    }
+
+    .left-section h2{
+        font-size: 9vw;
+    }
+
+    .left-section p{
+        font-size: 1rem;
+    }
+
+    .left-section-heading{
+        padding-bottom: 8vh;
+
+    }
 
 }

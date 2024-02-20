@@ -233,7 +233,7 @@ section {
     justify-content: center;
     text-align: right;
     align-items: end;
-    margin-left: 2vw;
+    /* margin-left: 2vw; */
     margin-right: 9vw;
 }
 .landing-left-section-heading h1{

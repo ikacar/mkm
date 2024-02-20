@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    /* todo promeniti font */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #142d4c;
+    /* smooth scrolling */
+    scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+    /* todo promeniti na odgovarajucu boju */
+    color: #ececec;
+
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2 {
+    color: #5585b5;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* BANER */
+.baner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 60vh;
+    position: relative;
 }
+.baner img{
+    height: 60vh;
+    width: 100vw;
+    /* filter: blur(4px); */
+}
+
+.baner h1{
+    text-align: center;
+    font-size: 5vw;
+    /* letter-spacing: 5px; */
+    color : #ececec;
+    text-transform: uppercase;
+    line-height: 16vh;
+}
+
+.baner-path-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.baner-path-top svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 52px;
+}
+
+.baner-path-top .shape-fill {
+    fill: #142D4C;
+}
+
+.baner-path-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.baner-path-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 39px;
+}
+
+.baner-path-bottom{
+    fill: #142D4C;
+}
+
+
+/* RIGHT SECTION */
+
+.right-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.right-section-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    align-items: end;
+    margin-left: 9vw;
+    margin-right: 2vw;
+}
+.right-section-heading h2{
+    font-size: 4vw;
+    letter-spacing: 5px;
+    /* background-image: url(../img/bager3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 80%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    top: 29%; */
+    text-transform: uppercase;
+    line-height: 16vh;
+}
+
+.right-section-heading p{
+    
+    line-height: 1.5;
+    max-width: 40ch;
+    font-size: 1.25rem;
+    
+}
+
+.right-section-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+}
+
+.right-section-image img{
+    filter: blur(2px);
+    width: 500px;
+    height: 700px;
+}
+
+/* LEFT SECTION */
+
+.left-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.left-section-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: start;
+    margin-left: 2vw;
+    margin-right: 9vw;
+}
+.left-section-heading h2{
+    font-size: 4vw;
+    letter-spacing: 5px;
+    /* background-image: url(../img/bager3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 80%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    top: 29%; */
+    text-transform: uppercase;
+    line-height: 16vh;
+}
+
+.left-section-heading p{
+    
+    line-height: 1.5;
+    max-width: 40ch;
+    font-size: 1.25rem;
+    
+}
+
+.left-section-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2vw;
+    align-items: end;
+
+}
+
+.left-section-image img{
+    filter: blur(2px);
+    width: 500px;
+    height: 700px;
+}
+
+
+/* LEFT LANDING */
+
+.landing-left-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.landing-left-section-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    align-items: end;
+    margin-left: 2vw;
+    margin-right: 9vw;
+}
+.landing-left-section-heading h1{
+    margin-top: 3vh;
+    font-size: 8vw;
+    letter-spacing: 5px;
+    background-image: url(img/clouds.jpeg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 80%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* top: 29%; */
+    text-transform: uppercase;
+    line-height: 16vh;
+
+}
+
+
+
+.landing-left-section-heading h2{
+    font-size: 2em;
+}
+
+.landing-left-section-heading p{
+
+    margin-top: 3vh;
+    font-size: 1.2vw;
+    line-height: 1.5;
+    max-width: 55ch;
+    
+}
+
+.landing-left-section-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2vw;
+    align-items: end;
+
+    position: relative;
+    width: 100wh;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.landing-left-section-image img{
+    filter: blur(2px);
+    /* width: 500px;
+    height: 700px; */
+}
+
+
+

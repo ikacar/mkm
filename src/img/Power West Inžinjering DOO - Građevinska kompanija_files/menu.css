@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+header{
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8vw;
+  transition: 0.6s;
+	background-color: #000000;
+  text-transform: uppercase;
+	
+}
+
+header.sticky{
+  background: #050505;
+  padding: 15px 8vw;
+}
+
+header .brand{
+  color:#cfb67e;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  color: #cfb67e;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 30px;
+  padding: 0 5px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #e3a32e;
+  
+}
+
+header .btn{
+  color: #cfb67e;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.section-two{
+  min-height: 100vh;
+  background: #001018;
+  padding: 20px 100px;
+}
+
+.section-two h2{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.section-two p{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+@media (max-width: 1060px){
+  header .btn{
+    display: block;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #12191f;
+    flex-direction: column;
+    min-width: 100%;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition: 0.5s;
+    transition-property: right;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu .close-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 20px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px){
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* IZMENE ZA MOBILNI */
+
+
+@media only screen and (max-width: 850px){
+	
+/* Tekst prva strana centrirana */
+	
+	.content--centered{
+		text-align: center;
+	}
+	
+/* SLIKA LOGO */
+	
+	.img-logo img{
+		width: 85%;
+	}
+	
+	.content__title-pre--offset{
+		margin-left: 0;
+	}
+	
+	
+	.content__text h2{
+		font-size: 8vw;
+		padding-top: 2vh;
+		line-height: normal;
+		margin-top: 2vh;
+	}
+	
+	.content__interlude{
+		font-size: 10vw;
+	}
+	
+	.reference{
+		font-size: 5vw;
+	}
+	
+	.content__interlude a{
+		font-size: 5vw;
+		padding-left: 5vw;
+	}
+
+	#gradnja{
+		font-size: 8vw;
+	}
+	
+	#slem{
+		padding-bottom: 6vh;
+	}
+	
+}

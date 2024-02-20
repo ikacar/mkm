@@ -1,0 +1,56 @@
+section{
+    min-height: 100vh;
+}
+
+.landing{
+    display: flex;
+    justify-content: center;
+    
+}
+.heading{
+    padding-left: 4vw;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.heading h1{
+    font-size: 9vw;
+    letter-spacing: 5px;
+    background-image: url(../img/clouds.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    top: 29%;
+    text-transform: uppercase;
+    line-height: 16vh;
+}
+
+.heading p{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 5vh;
+    
+}
+
+.landing-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+.landing-image img{
+    filter: blur(2px);
+    width: 35vw;
+    height: 80vh;
+}
+
+
+svg{
+    /* set color  */
+    fill: #142d4c
+}

@@ -1,7 +1,7 @@
 {
   "name": "mkm",
   "version": "0.1.0",
-  "homepage": "https://ikacar.github.io/",
+  "homepage": "https://ikacar.github.io/mkm/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

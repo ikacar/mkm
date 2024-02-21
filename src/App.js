@@ -19,7 +19,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/mkm" element={<Landing />} />
           <Route path="/o-nama" element={<AboutUs />} />
           <Route path="/usluge" element={<Services />} />
           <Route path="/projekti" element={<Projects />} />

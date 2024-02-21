@@ -13,7 +13,7 @@ const Contact = () => {
                 <section data-scroll-section="" className="sec-2" data-scroll-section-inview="">
                     <div className="naslov"><h1>Kontakt</h1></div>
                     <div className="mask">
-                        <img data-scroll="" data-scroll-speed="-1" src={beton} alt="Power Westt inženjering d.o.o preduzeće. Primarna delatnost firme jeste izgradnja stambenih i nestambenih zgrada." className="hero is-inview" />
+                        {/* <img data-scroll="" data-scroll-speed="-1" src={beton} alt="Power Westt inženjering d.o.o preduzeće. Primarna delatnost firme jeste izgradnja stambenih i nestambenih zgrada." className="hero is-inview" /> */}
                     </div>
                 </section>
                 <section data-scroll-section="" className="sec-4" data-scroll-section-inview="">

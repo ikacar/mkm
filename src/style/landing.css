@@ -1,24 +1,23 @@
 section{
-    min-height: 100vh;
+    min-height: 800px;
 }
 
 .landing{
     display: flex;
     justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 15vw;
     
 }
 .heading{
     /* position: absolute; */
-    display: flex;
+    padding-top: 20vh;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     padding-right: 3vh;
 }
 .heading h1{
-    font-size: 9vw;
-    /* make it bold   */
-    
-    letter-spacing: 5px;
     background-image: url(../img/clouds.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,36 +25,44 @@ section{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    top: 29%;
-    text-transform: uppercase;
-    line-height: 16vh;
+    padding-bottom: 3vh;
+
+}
+.heading p{
+    width: 40vw;
+    padding-bottom: 2vh;
 }
 
-.heading p{
-    margin-top: 6vh;
-    font-size: 1.5rem;
-    /* letter-spacing: 2px */
-    text-transform: uppercase;
-    line-height: 5vh;
-    
+/*  */
+.conntact-button{
+  border-radius: 10%;
+  padding: 15px 20px;
+  background-color: var(--button-color);
+  color: var(--primary-text-color);
+  font-weight: bold;
+  text-decoration: none;
+  /* uper case */
+  text-transform: uppercase;
+  font-size: 1.25rem;
+
 }
+
+
 
 .landing-image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20vh;
+    width: 550px;
+    height: 550px;  
+    border-radius: 10px;
 
 }
-.landing-image img{
-    /* filter: blur(2px); */
-    width: 600px;
-    height: 800px;
 
-}
 
 svg{
-    /* set color  */
     fill: #142d4c
 }
 
@@ -80,6 +87,20 @@ svg{
     animation: sladeInLeft 2s ease forwards; /* Dodajemo animaciju */
     animation-delay: 0.5s;
 
+  }
+
+  .landing .heading .line{
+    opacity: 0;
+    animation: sladeInLeft 2s ease forwards; /* Dodajemo animaciju */
+    animation-delay: 0.8s;
+
+  }
+
+  .landing .heading .button-container{
+    padding-top: 2vh;
+    opacity: 0;
+    animation: sladeInLeft 2s ease forwards; /* Dodajemo animaciju */
+    animation-delay: 1s;
   }
   
   @keyframes fadeIn {

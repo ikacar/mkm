@@ -5,10 +5,16 @@
     position: fixed;
     z-index: 1000;
     width: 100%;
-    background-color: #142d4c;
+    background-color: var(--third-color);
     font-size: 30px;
     font-weight: 700;
  }
+/* .logo img{
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+} */
 /* DESKTOP NAV */
 nav, .nav-links{
     display : flex;
@@ -29,28 +35,23 @@ nav {
 .nav-link {
     text-decoration: none;
     /* transition: color 0.3s ease; */
-    color: #5585b5;
+    color: var(--primary-text-color)
 
 }
 
 .nav-link:hover {
-    color: #899fb4;
-    /* todo postaviti boju */
-    /* color: #f1356d; */
+    color: var(--hover-color);
 }
 
 .logo {
     padding-left: 6vw;
     text-decoration: none;
     font-size: 2rem;
-    color: #5585b5;
-
+    color: var(--primary-text-color);
 }
 
 .logo:hover {
-    /* cursor: default; */
-    color: #899fb4;
-
+    color: var(--hover-color);
 }
 
 /* HAMBURGER MENU */

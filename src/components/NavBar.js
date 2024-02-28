@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../style/navbar.css';
 import { Link } from 'react-router-dom';
+import logo from '../img/mkm_transparent.png';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,9 +13,12 @@ const NavBar = () => {
   return (
     <div className='navigation'>
       <nav id="desktop-nav">
-        <Link to="/" className='logo'>MKM</Link>
+        <Link to="/mkm" className='logo'>
+          {/* <img src={logo} alt="MKM" /> */}
+          MKM
+        </Link>
         <div className='nav-links'>
-          <Link className='nav-link' to="/">Početna</Link>
+          <Link className='nav-link' to="/mkm">Početna</Link>
           <Link className='nav-link' to="/o-nama">O nama</Link>
           <Link className='nav-link' to="/usluge">Usluge</Link>
           <Link className='nav-link' to="/projekti">Projekti</Link>
@@ -30,7 +34,7 @@ const NavBar = () => {
             <span></span>
           </div>
           <div className={`menu-links ${isOpen ? 'open' : ''}`} id='menu-links'>
-            <Link className='menu-link' to="/" onClick={toggleMenu}>Početna</Link>
+            <Link className='menu-link' to="/mkm" onClick={toggleMenu}>Početna</Link>
             <Link className='menu-link' to="/o-nama" onClick={toggleMenu}>O nama</Link>
             <Link className='menu-link' to="/usluge" onClick={toggleMenu}>Usluge</Link>
             <Link className='menu-link' to="/projekti" onClick={toggleMenu}>Projekti</Link>

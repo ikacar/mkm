@@ -16,7 +16,6 @@
 }
 
 .services-heading h2{
-    font-size: 4rem;
     text-transform: uppercase;
 }
 
@@ -25,7 +24,7 @@
     margin-top: 3vh;
     /* line-height: 1.5; */
     /* max-width: 55ch; */
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
     margin-right: 15vw;
 
     

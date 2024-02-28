@@ -8,21 +8,31 @@
         padding-right: 10vw;
     }
 
+    h2{
+
+    }
+
+    p{
+
+    }
+    
     .landing{
-        padding-top: 20vh;
+        /* padding-top: 20vh; */
         /* padding-bottom: 10vh; */
         display: flex;
         flex-direction: column;
-        min-height: 70vh;
+        min-height: 90vh;
     }
 
-    .landing h1{
-        font-size: 15vw;
+    .landing-h1{
+        font-size: rem;
     }
 
     .landing p{
-        font-size: 4vw;
+        font-size: 1.25rem;
+        width: 70vw;
     }
+
 
     .landing img{
         display: none;
@@ -54,14 +64,10 @@
 
     .right-section h2{
         text-align: center;
-        font-size: 5vw;
-        line-height: 8vh;
     }
 
     .right-section p{
-        font-size: 3vw;
         text-align: center;
-        padding-bottom: 4vh;
     }
 
     .right-section img{
@@ -77,7 +83,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 20vh;
     }
 
     .left-section div:first-child{
@@ -91,14 +96,10 @@
 
     .left-section h2{
         text-align: center;
-        font-size: 5vw;
-        line-height: 8vh;
     }
 
     .left-section p{
-        font-size: 3vw;
         text-align: center;
-        padding-bottom: 4vh;
     }
 
     .left-section img{
@@ -107,7 +108,7 @@
     }
 
     .footer {
-        padding: 10vh 6vw 0;
+        padding: 3vh 6vw 0;
     }
 
     .footer .container{
@@ -143,7 +144,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 15vh;
+        /* padding-top: 15vh; */
+        
 
     }
 
@@ -154,84 +156,48 @@
     .landing-left-section-heading{
         
         align-items: start;
-        text-align: start;
-        padding-bottom: 4vh;
         
-    }
-
-    .landing-left-section h1{
-
-        font-size: 13vw;
-        line-height: 8vh;
-        margin-bottom: 4vh;
-        padding-top: 0vh;
-        padding-bottom: 0vh;
     }
 
     .landing-left-section h2{
         text-align: start;
-        font-size: 5vw;
-        line-height: 8vh;
     }
     .landing-left-section p{
-        font-size: 3vw;
         text-align: start;
-        padding-bottom: 4vh;
     }
 
     .landing-left-section-image{
-        height: 60vh;
-        width: 75vh;
+        display: none;
     }
-
-    /* .landing-left-section img{
-        height: 60vh;
-        width: 50vh;
-    } */
-
 
     .landing-right-section{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 15vh;
+        /* padding-top: 15vh; */
     }
 
     .landing-right-section-heading{
         align-items: left;   
     }
 
-    .landing-right-section h1{
-        font-size: 13vw;
-        line-height: 8vh;
-        margin-bottom: 4vh;
-        padding-top: 0vh;
-        padding-bottom: 0vh;
-    }
-
     .landing-right-section h2{
         text-align: left;
-        font-size: 5vw;
-        line-height: 8vh;
     }
 
     .landing-right-section p{
-        font-size: 3vw;
         text-align: left;
-        padding-bottom: 15vh;
     }
 
     .landing-right-section-image{
-        padding-left: 20vw;
-        padding-right: 20vw;
-        height: 100vh;
-        width: auto;
+        display: none;
     }
 
     .services{
-        margin-top: 20vh;
+        /* margin-top: 20vh; */
         /* margin-bottom: 10vh; */
+        padding-top: 5vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -242,20 +208,8 @@
         padding-bottom: 4vh;
     }
 
-    .services h2{
-        font-size: 3rem;
-        font-weight: 900;
-        margin-bottom: 2vh;
-        padding-top: 0vh;
-        padding-bottom: 0vh;
-    }
-
     .services p{
-        font-size: 1.5rem;
         text-align: left;
-        padding-bottom: 4vh;
-        font-weight: 400;
-        padding-bottom: 0vh;
     }
 
     .services-list-container{
@@ -294,8 +248,6 @@
 
     .project-heading{
         padding-bottom: 6vh;
-        font-weight: 900 ;
-        font-size: 3rem;
         background-color: none;
     }
     

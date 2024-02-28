@@ -1,4 +1,19 @@
 
+/* define colors */
+:root {
+    --primary-color: #5585b5;
+    --secondary-color: #142d4b;
+    --third-color: #132b48;;
+    --primary-text-color:#5585b5;
+    --secondary-text-color: #142d4c;
+    --third-text-color:  #ececec;
+    --hover-color: #899fb4;
+    --button-color: #14263c;
+}
+
+.hover-color{
+    color: var(--hover-color);
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +22,7 @@
 body {
     /* todo promeniti font */
     font-family: 'Montserrat', sans-serif;
-    background-color: #142d4c;
+    background-color: var(--secondary-color);
     /* smooth scrolling */
     scroll-behavior: smooth;
 }
@@ -18,24 +33,64 @@ html {
 
 p {
     /* todo promeniti na odgovarajucu boju */
-    color: #ececec;
-    font-weight: 900;
-
-
+    color: var(--third-text-color);
+    /* font-weight: 900; */
+    /* font-size: 1.2vw; */
+    line-height: 1.5;
+    font-size: 1.25rem;
 }
 
 h1, h2 {
-    color: #5585b5;
-    font-weight: 900;
+    color: var(--primary-text-color);
+}
+h1, h2, p {
+    margin: 2vh 0;
+}
 
+h2{
+    font-size: 3rem;
+    text-transform: uppercase;
 }
 section {
     padding-left: 5vw;
     padding-right: 5vw;
+    background: rgb(19,43,72);
+    background: linear-gradient(0deg, rgba(19,43,72,1) 0%, rgba(24,50,80,1) 100%);
 }
 
-/* BANER */
+.line{
+    width: 30vw;
+    height: 6px;
+    background-color: var(--button-color);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 
+}
+
+.line-80{
+    width: 50vw;
+    height: 6px;
+    background-color: var(--button-color);
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+}
+.landing-h1{
+    font-size: 5rem;    
+    letter-spacing: 3px;
+    color: transparent;
+    text-transform: uppercase;
+    line-height: 10vh;
+}
+
+#rights{
+	text-align: center;
+	padding-top: 5vh;
+	font-size: 0.8rem;
+	color: var(--primary-text-color)
+}
+/* BANER */
+    
 
 .baner{
     background-size: cover;
@@ -43,10 +98,33 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 60vh;
     position: relative;
     /* margin: 20vh 0; */
+;
 }
+
+.baner{
+    min-height: 60vh;
+}
+
+.baner h1{
+    text-align: center;
+    font-size: 5rem;
+    /* letter-spacing: 5px; */
+    color : var(--third-text-color);
+    text-transform: uppercase;
+    line-height: 10vh;
+    padding-bottom: 5vh;
+}
+.baner p{
+    color: var(--primary-text-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 2vh;
+}
+
 .baner img{
     height: 60vh;
     width: 100vw;
@@ -62,14 +140,7 @@ section {
     background: #142D4C;
     opacity: 0.5;
 }
-.baner h1{
-    text-align: center;
-    font-size: 5vw;
-    /* letter-spacing: 5px; */
-    color : #ececec;
-    text-transform: uppercase;
-    line-height: 16vh;
-}
+
 
 .baner-path-top {
     position: absolute;
@@ -112,7 +183,38 @@ section {
     fill: #142D4C;
 }
 
+/* .customer-container{
+    align-items: center;
+}
 
+.customer-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+
+.customer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    margin-left: 2vw;
+    line-height: 0px;
+    margin-right: 1vw;
+
+}
+.customer h1{
+    color: var(--third-text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 2vh;
+} */
 /* RIGHT SECTION */
 
 .right-section{
@@ -128,28 +230,6 @@ section {
     align-items: end;
     margin-left: 9vw;
     margin-right: 2vw;
-}
-.right-section-heading h2{
-    font-size: 4vw;
-    letter-spacing: 5px;
-    /* background-image: url(../img/bager3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% 80%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    top: 29%; */
-    text-transform: uppercase;
-    line-height: 16vh;
-}
-
-.right-section-heading p{
-    
-    line-height: 1.5;
-    max-width: 40ch;
-    font-size: 1.25rem;
-    
 }
 
 .right-section-image{
@@ -180,28 +260,6 @@ section {
     align-items: start;
     margin-left: 2vw;
     margin-right: 9vw;
-}
-.left-section-heading h2{
-    font-size: 4vw;
-    letter-spacing: 5px;
-    /* background-image: url(../img/bager3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% 80%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    top: 29%; */
-    text-transform: uppercase;
-    line-height: 16vh;
-}
-
-.left-section-heading p{
-    
-    line-height: 1.5;
-    max-width: 40ch;
-    font-size: 1.25rem;
-    
 }
 
 .left-section-image{
@@ -237,9 +295,6 @@ section {
     margin-right: 9vw;
 }
 .landing-left-section-heading h1{
-    margin-top: 3vh;
-    font-size: 7vw;
-    letter-spacing: 5px;
     background-image: url(img/clouds.jpeg); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -247,47 +302,26 @@ section {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    /* top: 29%; */
-    text-transform: uppercase;
-    line-height: 16vh;
-
-}
-
-
-
-.landing-left-section-heading h2{
-    font-size: 2em;
-}
-
-.landing-left-section-heading p{
-
-    margin-top: 3vh;
-    font-size: 1.2vw;
-    line-height: 1.5;
-    max-width: 55ch;
-    
 }
 
 .landing-left-section-image{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* margin-right: 2vw; */
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 2vw;
-    /* align-items: end; */
+    padding-left: 10vw;
 
-    position: relative;
-    width: 35vw;
-    height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
-
 .landing-left-section-image img{
-    /* filter: blur(2px); */
-    /* width: 500px;
-    height: 700px; */
+    width: 450px;
+    height: 650px;
 }
-
 
 
 /* RIGHT LANDING */
@@ -308,9 +342,6 @@ section {
 }
 
 .landing-right-section-heading h1{
-    margin-top: 3vh;
-    font-size: 7vw;
-    letter-spacing: 5px;
     background-image: url(img/clouds.jpeg); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -318,41 +349,65 @@ section {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    /* top: 29%; */
-    text-transform: uppercase;
-    line-height: 16vh;
-
-}
-
-.landing-right-section-heading h2{
-    font-size: 2em;
-}
-
-.landing-right-section-heading p{
-
-    margin-top: 3vh;
-    font-size: 1.2vw;
-    line-height: 1.5;
-    max-width: 55ch;
-    
 }
 
 .landing-right-section-image{
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2vw;
-    /* align-items: end; */
+    padding-left: 10vw;
 
-    position: relative;
-    width: 35vw;
-    height: 100vh;
-    overflow: hidden;
+}
+.landing-right-section-gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 8vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    width: 550px;
+    height: 750px;
+    border-radius: 10%;
+    /* blur iamge from top and bootom */
+    /* filter: blur(2px); */
+
 
 }
 
 .landing-right-section-image img{
-    /* filter: blur(2px); */
-    /* width: 500px;
-    height: 700px; */
+    width: 450px;
+    height: 650px;
 }
+
+.landing-right-section-image img{
+    /* stavi senku na sliku */
+
+}
+
+.box-shadow{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.box-radius{
+    border-radius: 2%;
+}
+/* =============== */
+/* ================ */
+
+
+
+
+
+/* 
+section-image
+
+baner-size
+baner-h1
+footer-h1
+footer-p */

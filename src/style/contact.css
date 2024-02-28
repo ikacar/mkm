@@ -1,0 +1,128 @@
+.contact-info {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    min-height: 50vh;
+
+}
+
+.contact-info h1 {
+    font-size: 30px;
+    margin: 0;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+.data h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.data p {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.contact-info-left,
+.contact-info-right {
+    padding: 30px;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    height: 450px;
+    width: 30vw;
+
+}
+
+.contact-form {
+    padding: 5vh 20vw;
+    min-height: 80vh;
+}
+.contact-form-header {
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form p {
+    width: 50vw;
+}
+
+.fill{
+    color: var(--primary-text-color);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+    /* posto input row ima 2 elementa stavi da da  */
+
+}
+
+.row-item{
+    width: 45%;
+    height: 3vh;
+
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 15px;
+    border-color: var(--primary-text-color);
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: var(--third-text-color);
+
+}
+
+.message {
+    height: 15vh;
+}
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary-text-color);
+}
+
+.button-container{
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+    
+}
+.button-container p{
+    font-size: 0.8rem;
+    opacity: 60%;
+    margin: 0;
+}
+
+/* button:hover {
+    background-color: var(--button-hover-color);
+} */

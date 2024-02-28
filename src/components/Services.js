@@ -32,15 +32,17 @@ const Services = () => {
     <div>
       <section className="landing-right-section">
       <div className="landing-right-section-heading">
-          <h1>USLUGE</h1>
-          <h2>MKM GLOBAL BUILDING</h2>
-          <p>
+      <div className='line'></div>
+
+          <h1 className="landing-h1">USLUGE</h1>
+          <h2 className="landing-h2">MKM GLOBAL</h2>
+          <p className="landing-p">
             Izgradnja poslovnih, stambenih, maloprodajnih objekata, magacinskih
             hala kao i objekata javne namene.
           </p>
         </div>
         <div className="landing-right-section-image">
-          <img src={working2} alt="vodje_gradilista" />
+          <img className='box-shadow box-radius' src={working2} alt="vodje_gradilista" />
         </div>
 
       </section>

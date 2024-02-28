@@ -3,17 +3,16 @@
 import React from 'react';
 import '../style/landing.css';
 
-import bager3 from '../img/bager3.jpg';
 import constructionSite from '../img/constructionSite.jpg';
 import craneBuilding from '../img/craneBuilding.jpg';
 import working2 from '../img/working2.jpg';
-import vodje_gradilista from '../img/vodje_gradilista.jpg';
-import radnici from '../img/radnici-power.jpg';
-import logo from '../img/logo1.jpg';
 import kran from '../img/kran.jpg';
 import blueprint from '../img/blueprint.png';
 import Baner from './Baner';
 import { useLayoutEffect } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../img/mkm_transparent.png';
+
 
 const Landing = () => {
     useLayoutEffect(() => {
@@ -25,19 +24,23 @@ const Landing = () => {
         <div>
             <section className='landing'>
                 <div className='heading'>
-                    <h1>MKM GLOBAL BUILDING</h1>
-                    <p className='heading-text'>
-                        Zadovoljstvo klijenata je naš prioritet i naša najveća motivacija.
+                    <h1 className='landing-h1'>MKM GLOBAL BUILDING</h1>
+                    <p className='heading-p'>
+                        Zadovoljstvo klijenata je naš prioritet i naša najveća motivacija. Obezbedjujemo najbolje uslove za rad i najbolje usluge na tržištu. Kontaktirajte nas i uverite se u našu profesionalnost.  
                     </p>
+                    <div className='line'></div>
+                    <div className='button-container'>
+                        <Link className='conntact-button' to='/kontakt'>Kontakt</Link>
+                    </div>
                 </div>
                 
-                <div className='landing-image'>
+                <div className='landing-image' style={{ backgroundImage: `url(${kran})`}}>
 
-                    <img src={kran} alt="kran" />
+                    {/* <img className='box-shadow box-radius' src={kran} alt="kran" /> */}
                 </div>
             </section>
             <div className="first-baner">
-            <Baner  image={blueprint} text1="zajedno gradimo" text2="vasu buducnost"/>
+            <Baner  image={blueprint} text1="Zajedno gradimo" text2="Vašu budućnost" />
             </div>
             
             <section className='right-section'>
@@ -48,18 +51,20 @@ const Landing = () => {
                         Naš tim se sastoji od profesionalaca sa dugogodišnjim iskustvom u građevinarstvu 
                         i spremni smo da se uhvatimo u koštac sa svim izazovima.
                     </p>
-                    <p> - Ilija Mikic</p>
+                    <div className='line'></div>
+
+                    <p className='hover-color'> - Ilija Mikic</p>
                 </div>
                 <div className='right-section-image'>
                     
-                    <img src={craneBuilding} alt="vodje_gradilista" />
+                    <img className='box-shadow box-radius' src={craneBuilding} alt="vodje_gradilista" />
                 </div>
             </section>
-            <Baner image={constructionSite} text1="zajedno gradimo" text2="vasu buducnost"/>
+            <Baner image={constructionSite} text1="Tokom 10 godina rada" text2="Preko 100 završenih projekata"/>
 
             <section className='left-section'>
                 <div className='left-section-image'>
-                    <img src={working2} alt="vodje_gradilista" />
+                    <img className='box-shadow box-radius' src={working2} alt="vodje_gradilista" />
                 </div>
                 <div className='left-section-heading'>
                     <h2>
@@ -70,7 +75,9 @@ const Landing = () => {
                         Naš tim se sastoji od profesionalaca sa dugogodišnjim iskustvom u građevinarstvu 
                         i spremni smo da se uhvatimo u koštac sa svim izazovima.
                     </p>
-                    <p > - Mladen Vuksic</p>
+                    <div className='line'></div>
+
+                    <p className='hover-color'> - Mladen Vuksic</p>
                 </div>
 
             </section>

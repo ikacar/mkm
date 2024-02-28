@@ -6,15 +6,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 
-#rights{
-	bottom: 0;
-	text-align: center;
-	padding: 1vh 0;
-	padding-top: 10vh;
-	font-size: 1rem;
-	color: #5585b5
-
-}
 
 
 .container{
@@ -26,12 +17,12 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-ul{
-	list-style: none;
-	color: white;
-}
+
 .footer{
-    padding: 70px 70px 10px;
+    padding-top:1vh;
+	padding-bottom: 1vh;
+	background-color: var(--button-color);
+	
 }
 .footer-col{
    width: 22%;
@@ -53,6 +44,10 @@ ul{
 	height: 2px;
 	box-sizing: border-box;
 	width: 70px;
+}
+.footer-col ul{
+	list-style: none;
+	color: var(--hover-color);
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;

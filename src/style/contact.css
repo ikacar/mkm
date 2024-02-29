@@ -99,6 +99,7 @@
 
 .message {
     height: 15vh;
+    resize: none;
 }
 
 

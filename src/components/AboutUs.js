@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import onama from '../img/onama.jpg';
 import '../style/aboutus.css';
-import craneBuilding from '../img/craneBuilding.jpg';
 import { useLayoutEffect } from 'react';
 
 const AboutUs = () => {
@@ -9,9 +8,9 @@ const AboutUs = () => {
     const aboutUsRef = useRef(null);
 
 
-    // useLayoutEffect(() => {
-    //     window.scrollTo(0, 0)
-    // });
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
 
     useEffect(() => {
@@ -30,9 +29,7 @@ const AboutUs = () => {
     return (
         <div>
             <section className='landing-left-section'>
-                <div className='landing-left-section-image'>
-                    <img className='box-shadow box-radius' src={craneBuilding} alt="vodje_gradilista" />
-                </div>
+                <div className='landing-left-section-image box-shadow' style={{ backgroundImage: `url(${onama})` }} />
                 <div className='landing-left-section-heading'>
                     <h1 className='landing-h1'>O NAMA</h1>
                     <h2 className='landing-h2'>MKM GLOBAL</h2>

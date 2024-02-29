@@ -9,10 +9,10 @@ const Services = () => {
   const servicesRef = useRef(null);
 
   
-  // useLayoutEffect(() => {
-  //   console.log("useLayoutEffect");
-  //   window.scrollTo(0, 0)
-  //   });
+  useLayoutEffect(() => {
+    console.log("useLayoutEffect");
+    window.scrollTo(0, 0)
+    });
 
 
     useEffect(() => {
@@ -38,12 +38,10 @@ const Services = () => {
           <h2 className="landing-h2">MKM GLOBAL</h2>
           <p className="landing-p">
             Izgradnja poslovnih, stambenih, maloprodajnih objekata, magacinskih
-            hala kao i objekata javne namene.
+            hala kao i objekata javne namene. Izgradnja i rekonstrukcija
           </p>
         </div>
-        <div className="landing-right-section-image">
-          <img className='box-shadow box-radius' src={working2} alt="vodje_gradilista" />
-        </div>
+        <div className="landing-right-section-image box-shadow" style={{ backgroundImage: `url(${working2})` }}/>  
 
       </section>
       <section ref={servicesRef} className={`services ${isVisible ? "visible" : ""}`}>

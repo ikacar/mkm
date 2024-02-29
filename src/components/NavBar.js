@@ -26,7 +26,9 @@ const NavBar = () => {
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div className='logo'>MKM</div>
+        <Link to="/mkm" className='logo'>
+        MKM
+        </Link>
         <div className={`hamburger-menu ${isOpen ? 'open' : ''}`}>
           <div className={`hamburger-icon ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
             <span></span>

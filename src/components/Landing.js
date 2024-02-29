@@ -11,7 +11,9 @@ import blueprint from '../img/blueprint.png';
 import Baner from './Baner';
 import { useLayoutEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../img/mkm_transparent.png';
+import { useEffect } from 'react';
+
+
 
 
 const Landing = () => {
@@ -19,6 +21,17 @@ const Landing = () => {
         window.scrollTo(0, 0)
     });
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrolled = window.scrollY;
+            const scrollPercentage = (scrolled / (document.body.scrollHeight - window.innerHeight)) * 100;
+
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     
     return (
         <div>
@@ -34,7 +47,7 @@ const Landing = () => {
                     </div>
                 </div>
                 
-                <div className='landing-image' style={{ backgroundImage: `url(${kran})`}}>
+                <div className='landing-image box-shadow' style={{ backgroundImage: `url(${kran})`}}>
 
                     {/* <img className='box-shadow box-radius' src={kran} alt="kran" /> */}
                 </div>
@@ -43,45 +56,54 @@ const Landing = () => {
             <Baner  image={blueprint} text1="Zajedno gradimo" text2="Vašu budućnost" />
             </div>
             
-            <section className='right-section'>
-                <div className='right-section-heading'>
-                    <h2>Naša misija</h2>
-                    <p>
-                        Naša misija je da pružimo najbolje usluge na tržištu građevinarstva. 
-                        Naš tim se sastoji od profesionalaca sa dugogodišnjim iskustvom u građevinarstvu 
-                        i spremni smo da se uhvatimo u koštac sa svim izazovima.
-                    </p>
-                    <div className='line'></div>
+            <section className='description-section'>
+                <div className='right-section'>
+                    <div className='right-section-heading'>
+                        <h2>Naša misija</h2>
+                        <p>
+                            Naša misija je da pružimo najbolje usluge na tržištu građevinarstva. 
+                            Naš tim se sastoji od profesionalaca sa dugogodišnjim iskustvom u građevinarstvu 
+                            i spremni smo da se uhvatimo u koštac sa svim izazovima.
+                        </p>
+                        <div className='line'></div>
 
-                    <p className='hover-color'> - Ilija Mikic</p>
+                        <p className='hover-color'> - Ilija Mikic</p>
+                    </div>
+                    <div className='right-section-image box-shadow' style={{ backgroundImage: `url(${craneBuilding})`}}/>
                 </div>
-                <div className='right-section-image'>
-                    
-                    <img className='box-shadow box-radius' src={craneBuilding} alt="vodje_gradilista" />
-                </div>
-            </section>
-            <Baner image={constructionSite} text1="Tokom 10 godina rada" text2="Preko 100 završenih projekata"/>
-
-            <section className='left-section'>
-                <div className='left-section-image'>
-                    <img className='box-shadow box-radius' src={working2} alt="vodje_gradilista" />
-                </div>
-                <div className='left-section-heading'>
-                    <h2>
-                        Iskustvo
-                    </h2>
-                    <p>
-                      
-                        Naš tim se sastoji od profesionalaca sa dugogodišnjim iskustvom u građevinarstvu 
-                        i spremni smo da se uhvatimo u koštac sa svim izazovima.
-                    </p>
-                    <div className='line'></div>
-
+                <div className='left-section'>
+                    <div className='left-section-image-container'>
+                        <div className='left-section-image box-shadow' style={{ backgroundImage: `url(${working2})`}}/>
+                    </div>
+                    <div className='left-section-heading'>
+                        <h2>
+                            Iskustvo
+                        </h2>
+                        <p>
+                            Naš tim se sastoji od profesionalaca sa dugogodišnjim iskustvom u građevinarstvu 
+                            i spremni smo da se uhvatimo u koštac sa svim izazovima.
+                        </p>
+                        <div className='line'></div>
                     <p className='hover-color'> - Mladen Vuksic</p>
                 </div>
+            </div>
+            <div className='right-section'>
+                    <div className='right-section-heading'>
+                        <h2>Vrednosti</h2>
+                        <p>
+                            Vrednosti na kojima se zasniva naš rad su kvalitet, profesionalnost i posvećenost. Obezbedjujemo najbolje uslove za rad i najbolje usluge na tržištu.
+                        </p>
+                        <div className='line'></div>
 
+                        <p className='hover-color'> - Miloš Kostic</p>
+                    </div>
+                    <div className='right-section-image box-shadow' style={{ backgroundImage: `url(${craneBuilding})`}}/>
+                </div>
             </section>
 
+            <div className="first-baner">
+            <Baner image={blueprint} text1="Tokom 10 godina rada" text2="Preko 100 završenih projekata"/>
+            </div>
         </div>
 
     );

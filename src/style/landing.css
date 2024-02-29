@@ -47,16 +47,14 @@ section{
 
 }
 
-
-
 .landing-image{
   
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 20vh;
-    width: 550px;
-    height: 550px;  
+    width: 60vw;
+    height: 500px;  
     border-radius: 10px;
 
 }

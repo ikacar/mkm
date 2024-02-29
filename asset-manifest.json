@@ -1,12 +1,11 @@
 {
   "files": {
-    "main.css": "/mkm/static/css/main.d19c6b8a.css",
-    "main.js": "/mkm/static/js/main.4b00c8ee.js",
+    "main.css": "/mkm/static/css/main.660aa098.css",
+    "main.js": "/mkm/static/js/main.8daec05c.js",
     "static/js/592.db7aca85.chunk.js": "/mkm/static/js/592.db7aca85.chunk.js",
     "static/media/project2.jpeg": "/mkm/static/media/project2.b3bdcd4fbb7d891cd70c.jpeg",
     "static/media/blueprint.png": "/mkm/static/media/blueprint.52d5f66d1c8123ac89e9.png",
     "static/media/project3.jpg": "/mkm/static/media/project3.3bb4a4f493dfa2d15661.jpg",
-    "static/media/onama.jpg": "/mkm/static/media/onama.9346298512144330f448.jpg",
     "static/media/constructionSite.jpg": "/mkm/static/media/constructionSite.298f3d5dead9f055cc76.jpg",
     "static/media/project1.jpeg": "/mkm/static/media/project1.d596064839bfee62111a.jpeg",
     "static/media/2.jpg": "/mkm/static/media/2.2d4a486962d23639f194.jpg",
@@ -21,14 +20,15 @@
     "static/media/project4.jpeg": "/mkm/static/media/project4.592ea710bcd96e028a52.jpeg",
     "static/media/kran.jpg": "/mkm/static/media/kran.fd95a8318db47120d5f3.jpg",
     "static/media/working2.jpg": "/mkm/static/media/working2.a7886d7698555ab59bcc.jpg",
+    "static/media/onama.jpg": "/mkm/static/media/onama.f3d483d038de3185c14b.jpg",
     "static/media/clouds.jpeg": "/mkm/static/media/clouds.11da69d4e6ef4090a275.jpeg",
     "index.html": "/mkm/index.html",
-    "main.d19c6b8a.css.map": "/mkm/static/css/main.d19c6b8a.css.map",
-    "main.4b00c8ee.js.map": "/mkm/static/js/main.4b00c8ee.js.map",
+    "main.660aa098.css.map": "/mkm/static/css/main.660aa098.css.map",
+    "main.8daec05c.js.map": "/mkm/static/js/main.8daec05c.js.map",
     "592.db7aca85.chunk.js.map": "/mkm/static/js/592.db7aca85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d19c6b8a.css",
-    "static/js/main.4b00c8ee.js"
+    "static/css/main.660aa098.css",
+    "static/js/main.8daec05c.js"
   ]
 }
